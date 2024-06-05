@@ -4,7 +4,7 @@ export default function Page() {
       <h1>Shopping List</h1>
       <p>Daljot Kaur</p>
       <a href="https://github.com/daljotkaur" target="_blank" rel="noopener noreferrer">
-        My GitHub
+        https://github.com
       </a> 
     </main>
   );
