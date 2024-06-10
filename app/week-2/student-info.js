@@ -7,7 +7,6 @@ const StudentInfo = () => {
   return (
     <div>
       <p> Daljot Kaur </p>
-      {/* Replace 'your-github-username' with your actual GitHub username */}
       <Link href="https://github.com/daljotkaur">
         <a>Link to GitHub Repository</a>
       </Link>
