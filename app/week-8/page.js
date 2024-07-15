@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useUserAuth } from "./_utils/auth-context";
+import { useUserAuth } from "../week-9/_utils/auth-context";
 
 const Page = () => {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
