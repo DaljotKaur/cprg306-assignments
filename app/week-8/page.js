@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useUserAuth } from "../week-9/_utils/auth-context";
+import { useUserAuth } from "./_utils/auth-context.js";
 
 const Page = () => {
-  const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+const { user ,  gitHubSignIn, firebaseSignOut } = useUserAuth();
 
   const handleSignIn = async () => {
     await gitHubSignIn();
@@ -20,9 +20,9 @@ const Page = () => {
       {user && (
         <div>
           <p>
-            Welcome, {user.displayName} ({user.email})
+            Welcome, Daljot Kaur 
           </p>
-          <button onClick={handleSignOut}>Logout</button>
+          <button onClick={handleSignOut}> </button>
           <Link href={"/week-8/shopping-list"}>Go to shopping list</Link>
         </div>
       )}
