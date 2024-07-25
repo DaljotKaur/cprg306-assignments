@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useUserAuth } from "./_utils/auth-context.js";
+import { useUserAuth } from "../week-8/_utils/auth-context"; // Adjusted import path
 
 const Page = () => {
 const { user ,  gitHubSignIn, firebaseSignOut } = useUserAuth();
@@ -23,7 +23,7 @@ const { user ,  gitHubSignIn, firebaseSignOut } = useUserAuth();
             Welcome, Daljot Kaur 
           </p>
           <div>
-            <button onClick={handleSignOut}> Sign Out </button>
+            <button onClick={handleSignOut}> Sign Out  </button>
             </div>
             <div>
           <Link href={"/week-8/shopping-list"}>Go to shopping list</Link>
